@@ -1,0 +1,77 @@
+{
+  "routes": [
+    {
+      "path": "/api/login",
+      "controller": "Api\\ApiAuthController",
+      "action": "login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/register",
+      "controller": "Api\\ApiAuthController",
+      "action": "register",
+      "method": "POST"
+    },
+    {
+      "path": "/api/logout",
+      "controller": "Api\\ApiAuthController",
+      "action": "logout",
+      "method": "POST"
+    },
+    {
+      "path": "/api/profile",
+      "controller": "Api\\ApiAuthController",
+      "action": "profile",
+      "method": "GET"
+    },
+    {
+      "path": "/api/profile",
+      "controller": "Api\\ApiAuthController",
+      "action": "updateProfile",
+      "method": "PUT"
+    },
+    {
+      "path": "/api/posts",
+      "controller": "Api\\ApiPostController",
+      "action": "index",
+      "method": "GET"
+    },
+    {
+      "path": "/api/posts",
+      "controller": "Api\\ApiPostController",
+      "action": "store",
+      "method": "POST"
+    },
+    {
+      "path": "/api/posts/show",
+      "controller": "Api\\ApiPostController",
+      "action": "show",
+      "method": "GET"
+    },
+    {
+      "path": "/api/users/posts",
+      "controller": "Api\\ApiPostController",
+      "action": "userPosts",
+      "method": "GET"
+    },
+    {
+      "path": "/api/users",
+      "controller": "Api\\ApiUserController",
+      "action": "show",
+      "method": "GET"
+    },
+    {
+      "path": "/api/comments",
+      "controller": "Api\\ApiCommentController",
+      "action": "index",
+      "method": "GET"
+    },
+    {
+      "path": "/api/comments",
+      "controller": "Api\\ApiCommentController",
+      "action": "store",
+      "method": "POST"
+    }
+  ]
+}
+
